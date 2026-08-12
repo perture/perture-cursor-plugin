@@ -1,0 +1,16 @@
+{
+  "name": "perture-cursor",
+  "version": "0.1.0",
+  "description": "Secure Cursor connector for Perture brand context, frontend contracts, and validation.",
+  "author": {
+    "name": "Perture",
+    "email": "supportperture@gmail.com",
+    "url": "https://app.perture.co/"
+  },
+  "homepage": "https://app.perture.co/",
+  "repository": "https://github.com/perture/perture-cursor-plugin",
+  "license": "UNLICENSED",
+  "keywords": ["brand", "frontend", "validation", "perture"],
+  "skills": "./skills/",
+  "rules": "./rules/"
+}
