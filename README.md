@@ -1,21 +1,27 @@
-# Perture for Cursor (private source package)
+# Perture for Cursor
 
-This is a local Cursor adapter for the Perture Integration Gateway v1. It does
-not contain brand rules, customer data, API keys, or a generic MCP server.
+Official thin connection package for Perture.
 
-Set `PERTURE_ACCESS_TOKEN` locally and run the included standalone script when
-the agent needs explicit Perture context. The token must be issued for the
-`cursor` client and the gateway audience. The package contains no dependency
-on the Perture app repository.
+The package contains only host metadata, a remote-service locator, and minimal
+connection safeguards. Authentication is completed and stored by Cursor. No
+credentials, customer data, business rules, scoring, prompts, validators,
+request clients, or implementation logic are bundled.
 
-```bash
-node scripts/perture-integration.mjs --operation list-brands
+All protected behavior is executed on Perture infrastructure and authorized on
+every request.
+
+## Install
+
+Until the reviewed Cursor Marketplace listing is available, clone this
+repository into Cursor's local plugin directory:
+
+```text
+~/.cursor/plugins/local/perture-cursor
 ```
 
-This private GitHub source package is not registered in the Cursor Marketplace.
-The gateway URL in the package is a release target, not evidence that the
-corresponding app release has already been deployed.
+Restart Cursor or run `Developer: Reload Window`, enable Perture, and complete
+the browser sign-in when Cursor requests authorization.
 
-The package uses Cursor's documented `.cursor-plugin/plugin.json`, `skills/`,
-and `rules/` structure. Authentication, authorization, and customer data policy
-remain on `app.perture.co`.
+The thin connector is MIT licensed so Cursor can review and distribute it. The
+Perture service, backend, models, policies, prompts, validators, and customer
+data are not part of this repository and remain protected.
