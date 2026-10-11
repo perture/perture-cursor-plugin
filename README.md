@@ -10,6 +10,13 @@ request clients, or implementation logic are bundled.
 All protected behavior is executed on Perture infrastructure and authorized on
 every request.
 
+Owners with an active Pro plan can explicitly ask Cursor to add or edit Brand
+Page colors, typography, logos, fonts, illustrations, spacing and rounding
+through the remote Perture tools. Editing requires the selected brand and
+its lock, the owner's request, and OAuth write permission. After updating an
+existing connection, reconnect Perture and approve the displayed write scopes;
+older read-only tokens do not gain write access automatically.
+
 ## Install
 
 Until the reviewed Cursor Marketplace listing is available, clone this
